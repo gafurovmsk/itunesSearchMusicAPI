@@ -15,6 +15,7 @@
 		04F56D491EBB94B7004CB8FF /* Masonry.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 04F56D481EBB94B6004CB8FF /* Masonry.framework */; };
 		04F56D4A1EBB94B7004CB8FF /* Masonry.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 04F56D481EBB94B6004CB8FF /* Masonry.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		04F56D501EBBB17F004CB8FF /* Track.m in Sources */ = {isa = PBXBuildFile; fileRef = 04F56D4F1EBBB17F004CB8FF /* Track.m */; };
+		185215E31F06A00D00604A8E /* ItunesRecordCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 185215E21F06A00D00604A8E /* ItunesRecordCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -44,6 +45,8 @@
 		04F56D481EBB94B6004CB8FF /* Masonry.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Masonry.framework; path = Carthage/Build/iOS/Masonry.framework; sourceTree = "<group>"; };
 		04F56D4E1EBBB17F004CB8FF /* Track.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Track.h; sourceTree = "<group>"; };
 		04F56D4F1EBBB17F004CB8FF /* Track.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Track.m; sourceTree = "<group>"; };
+		185215E11F06A00D00604A8E /* ItunesRecordCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ItunesRecordCell.h; sourceTree = "<group>"; };
+		185215E21F06A00D00604A8E /* ItunesRecordCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ItunesRecordCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,9 +88,9 @@
 				04F56D4E1EBBB17F004CB8FF /* Track.h */,
 				04F56D4F1EBBB17F004CB8FF /* Track.m */,
 				04F56D3D1EBB90FB004CB8FF /* Assets.xcassets */,
-				04F56D3F1EBB90FB004CB8FF /* LaunchScreen.storyboard */,
-				04F56D421EBB90FB004CB8FF /* Info.plist */,
 				04F56D311EBB90FB004CB8FF /* Supporting Files */,
+				185215E11F06A00D00604A8E /* ItunesRecordCell.h */,
+				185215E21F06A00D00604A8E /* ItunesRecordCell.m */,
 			);
 			path = Tutorial4May17;
 			sourceTree = "<group>";
@@ -95,6 +98,8 @@
 		04F56D311EBB90FB004CB8FF /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				04F56D421EBB90FB004CB8FF /* Info.plist */,
+				04F56D3F1EBB90FB004CB8FF /* LaunchScreen.storyboard */,
 				04F56D321EBB90FB004CB8FF /* main.m */,
 			);
 			name = "Supporting Files";
@@ -141,6 +146,7 @@
 				TargetAttributes = {
 					04F56D2D1EBB90FB004CB8FF = {
 						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = UFP24RKUDP;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -201,6 +207,7 @@
 				04F56D361EBB90FB004CB8FF /* AppDelegate.m in Sources */,
 				04F56D331EBB90FB004CB8FF /* main.m in Sources */,
 				04F56D501EBBB17F004CB8FF /* Track.m in Sources */,
+				185215E31F06A00D00604A8E /* ItunesRecordCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -312,6 +319,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = UFP24RKUDP;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
@@ -328,6 +336,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = UFP24RKUDP;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Build/iOS",

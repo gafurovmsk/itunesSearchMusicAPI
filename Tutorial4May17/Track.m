@@ -10,28 +10,23 @@
 
 @interface Track()
 
-@property (nonatomic,strong) NSString *trackName;
-@property (nonatomic,strong) NSString *artistName;
-@property (nonatomic,strong) NSString *trackPrice;
-@property (nonatomic,strong) NSData *trackImage;
-
-
-
 @end
 
 @implementation Track
 
--(instancetype)initWithName:(NSString *)name artist:(NSString *)artist price:(NSString *) price andImage:(NSData*)image{
-    
-    self = [super init];
-    if(!self) return nil;
-    
-    _trackName = name;
-    _artistName = artist;
-    _trackPrice = price;
-    _trackImage = image;
-    
-    return  self;
+- (instancetype)initWithName:(NSString *)name artist:(NSString *)artist album:(NSString *)album
+    price:(NSString *)price andImage:(NSData*)image {
+  
+  self = [super init];
+  if(!self) return nil;
+  
+  _trackName = name;
+  _artistName = artist;
+  _trackPrice = price;
+  _albumImage = image;
+  _albumName = album;
+  
+  return  self;
 }
 
 @end
